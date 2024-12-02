@@ -1,0 +1,281 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #FF6347; /* Tomato color */
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 90%; /* Adjust container width */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    padding: 40px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    background-color: #fff;
+    padding: 60px 0;
+    border-radius: 8px;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #FF6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background-color: #e5533c;
+}
+
+/* Shop Section */
+#shop {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 0;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 22%;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 1.2rem;
+    color: #FF6347;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .product-gallery {
+        justify-content: space-between;
+    }
+
+    .product-item {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    header .container {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .product-gallery {
+        justify-content: space-between;
+    }
+
+    .product-item {
+        width: 45%;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .product-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 80%;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    .product-item {
+        width: 90%;
+    }
+
+    .product-item img {
+        height: 150px;
+    }
+
+    .product-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 6px 14px;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}
